@@ -32,12 +32,10 @@ with scope("config") as config:
 uuid = "pugixml-{version}".format(version=str(version))
 
 def commands():
-    env.PATH.prepend("{root}/bin")
     env.LD_LIBRARY_PATH.prepend("{root}/lib64")
     env.PKG_CONFIG_PATH.prepend("{root}/lib64/pkgconfig")
     env.CMAKE_MODULE_PATH.prepend("{root}/lib64/cmake/pugixml")
 
     # Helper environment variables.
-    env.PUGIXML_BINARY_PATH.set("{root}/bin")
     env.PUGIXML_INCLUDE_PATH.set("{root}/include")
     env.PUGIXML_LIBRARY_PATH.set("{root}/lib64")
