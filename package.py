@@ -21,7 +21,7 @@ requires = [
 ]
 
 variants = [
-    ["platform-linux"]
+    ["platform-linux","arch-x86_64"]
 ]
 
 build_system = "cmake"
